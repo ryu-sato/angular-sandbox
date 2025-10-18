@@ -4,5 +4,6 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-  "remoteUser": "node"
+  "remoteUser": "node",
+  "postCreateCommand": "echo source <(ng completion script) >> ~/.bashrc"
 }
