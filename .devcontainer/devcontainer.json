@@ -5,5 +5,5 @@
 		"dockerfile": "Dockerfile"
 	},
   "remoteUser": "node",
-  "postCreateCommand": "echo source <(ng completion script) >> ~/.bashrc"
+  "postCreateCommand": "echo 'source <(ng completion script)' >> ~/.bashrc"
 }
