@@ -1,7 +1,8 @@
-FROM node:20
+FROM node:20.19.5
 
 # Install basic development tools
 RUN apt update && apt install -y less man-db sudo
+RUN npm install -g @angular/cli
 
 # Ensure default `node` user has access to `sudo`
 ARG USERNAME=node
